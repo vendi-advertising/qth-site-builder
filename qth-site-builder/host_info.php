@@ -6,7 +6,7 @@ class host_info extends base_plugin
 {
     public function __construct()
     {
-        parent::__construct( 'Host Info', 'host-info' );
+        parent::__construct( 'Host Info', 'host_info' );
 
         $this->register_all();
     }
