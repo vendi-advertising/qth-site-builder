@@ -58,7 +58,12 @@ class host_info extends base_plugin
 
     public function get_qth_server_name_from_phpinfo()
     {
-        $subject = '<tr><td class="e">System </td><td class="v">Linux www15.website-server.net 2.6.32-673.26.1.lve1.4.18.el6.x86_64 #1 SMP Fri Oct 21 11:58:14 EDT 2016 x86_64 </td></tr>';
+        //TODO: This call might be expensive and we should probably staff this
+        //in a transient
+        ob_start();
+        phpinfo( INFO_GENERAL );
+        $subject = ob_get_clean();
+
         $pattern = preg_quote( '<tr><td class="e">System </td><td class="v">' ) .
                     '(?<value>[^<]*)' .
                     preg_quote( '</td></tr>' );
