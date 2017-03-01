@@ -9,7 +9,7 @@ Version: 0.0.1
 */
 
 define( 'QTH_SITE_BUILDER_VERSION',             '0.0.1' );
-define( 'QTH_SITE_BUILDER_PLUGIN_URL',          content_url( 'mu-plugins' ) );
+// define( 'QTH_SITE_BUILDER_PLUGIN_URL',          content_url( 'mu-plugins' ) );
 define( 'QTH_SITE_BUILDER_PLUGIN_FILE',         __FILE__ );
 define( 'QTH_SITE_BUILDER_PLUGIN_PATH',         dirname( __FILE__ ) );
 define( 'QTH_SITE_BUILDER_PLUGIN_FOLDER_NAME', 'qth-site-builder' );
