@@ -60,7 +60,8 @@ abstract class base_plugin
 
     public final function cache_get( $key, $default = null )
     {
-        $ret = wp_cache_get( $key, $this->get_object_cache_group_name(), false, $found = null );
+		$found = null;
+        $ret = wp_cache_get( $key, $this->get_object_cache_group_name(), false, $found );
         if( false === $found )
         {
             return $default;

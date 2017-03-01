@@ -16,7 +16,7 @@ class host_info extends base_plugin
         $local_key_name = 'qth_server_name';
 
         $hostname = $this->cache_get( $local_key_name );
-        if( ! $value )
+        if( ! $hostname )
         {
             $hostname = $this->get_hostname();
 
