@@ -53,6 +53,7 @@ spl_autoload_register(
 
 $plugins = array(
                     'host_info',
+                    'wizard',
                 );
 
 foreach( $plugins as $plugin )
